@@ -1,0 +1,700 @@
+
+
+
+win+r  \\fs   препод  кичук вадим    паблик   ip  (підключення для трансляції)
+
+валідація перевірка коду
+validator.w3.org
+
+картинки мона підключати по силці
+
+структура сторінки з блоків 
+
+cтрокові теги займаюсть стільки місця скільки їм потрібно
+блочні займаюсть всю доступну ширину
+
+ тег display: (свойтсва)inline строковий	
+	Block (блочний)
+	none (не буде відображений на екрані)
+
+<div> </div> блочний
+<span> </span> строковий
+
+w3c and whatwg займа.ться стандартизацією
+
+https://caniuse.com/
+вендерний префикс запускає ,навіть якщо властивість ще в розробці
+
+-webkid- префікс 
+{
+-webkid-color: red
+-o-
+-moz-
+-ms-
+color:red }
+на даний час лише -webkid-(хром) і -moz-(мозила)
+
+<title> clip-path </title> дає назву вкладці (тег)
+атрбут classtitle> 
+<link rel="icon" href="https://cdn.dribbble.com/users/56874/screenshots/1504502/rick-_rick-and-morty-cartoon_-pixel-art-by-dimaaaa-400_300.gif">
+підключня іконки у вкладці сторінки (icon)
+
+
+<ul> коробка маркованого списку
+<li> </li> пункт *
+</ul>
+
+
+ list-style-image: url()
+
+<ol> коробка маркованого списку Тег
+<li> </li> пункт *
+</ol>
+арибут reversed перверне нумерацію
+арибут start з чого почати нумерацію
+
+ <dl > коробка
+<dt> значення
+usa
+</dt>
+<dd>is country  </dd>опис
+    </dl>
+можна давати декілька класів через пробіл
+комент в css /* */	
+
+спец символи
+
+списки це готова структура 
+Таблиці це готова структура набір строк з ячейками
+
+<table>коробка
+<tr>
+<td>
+</td>
+</tr>
+</table>
+
+table {border-collapse: collapse;}
+td {  border: 2px solid red}
+
+bordre збираюче власивість задає товщину тип колір  2px товщина solid red колір
+rownspan розширення в стовпці
+colnspan розширення в строці
+таблиц не з'явиться,поки не буде вся загружена
+все що поза ячейками таблиця викидає ззовні
+border-color колір
+border-width висота
+border-style стиль
+border-bottom-color границя нижня колір
+закругляти рамки  border-radius в % 50 макс можна в % ,можна в рх
+
+курсор cursor: https://developer.mozilla.org/ru/docs/Web/CSS/cursor
+
+<div></div>
+ display: inline-block; займає стільки скільки йому потрібно місця і йомуможна задати розмір
+розміри в % вираховуються від батьківського від body
+також можна в рх
+в css html, body { height:100%;
+width:100%;}
+div {display :inline-block;
+height:100%;
+width:100%;
+color: grey;
+<!--
+	vertical-align: вирівнування інлайн блоків в просторі top/bottom/middle
+default
+pointer 
+none
+<tbody></tbody> нада писать всегда
+
+.d3:hover
+hover псевдо клас меняет стили при наведении мышки
+
+transition: 1s; в основному тегі(час для зміни тегу)
+можна вказати властивість для будь якого параметру через пробіл, властивості ідуть через кому.
+можна виставляти затримку 
+transition: 2500ms height 500px 5s;
+
+margin- left right top bottom зовнішній відступ
+є загальний margin 1- верх низ право ліво, 2- перше верх низ друге раво ліво
+ 4 по годинниковій стрілці (верх право низ ліво) 3 верх праволіво низ
+margin: 5px 10px 50px 20px;
+
+margin-left: auto;
+margin-right: auto; вирівняти блок по центру строки
+
+якщо задати відступ зверху першому діву, він може потягнути body
+
+padding: роздути розмір (внутрішній відступ)
+
+фонова картинка 
+width: 200px;
+  height: 200px;
+  background-image: url()
+background-size: 50% 50%;
+  background-size: 	cover займає собою весь екран без змін пропорції
+			contain зберігає пропорції і помістить повністю(може дублюватись)
+			бузшовні фони(гуглити)
+
+opacity: прозорість від 0 до 1, 0,2; 0,5;
+
+div:hover span{} через пробл вложеність
+
+box-sizing: border-box padding падінг включається в розміри елементу,а не добаляється
+
+тег <a href=""> тут має бути текст </a> href вказує куди веде силка
+target="blank" відкриває владку в новій вкладці
+download скачує те що знаходиться по силці
+
+id в рамках сторінки не можуть мовторюватись, звернення в css через #
+можна задати значення (ім'я для скачуваного файла)
+
+дочірні елементи не можуть бути різні з материнським(opacity:)
+19:02 13.09.2021
+поток сторінок правило видачі контента на стрінку
+
+position властивість для позиціювання елементів
+
+position: fixed; фіксоване від робочої області екрану 
+,якщо не задати місце видачі,він візьме точку із стандартного потоку сторінки
+absolute; абсолютне
+static статичне по правилу діва
+relative відносне
+sticky абсолютне i фіксоване
+
+position: fixed;
+top bottom right left: calc(50% - 10px) дає можливість вказати положення через вираз(навколо оператора потрібен пробіл)
+щоб зробити контент по центру top: calc(50% -розмір контенту ) right: calc(50% - розмір контенту)
+останнє значення перебиває попереднє
+
+absolute; абсолютне від найближчого позиціонованого батька
+
+relative відносне, від місця своєї видачі на екран 
+sticky спочатку як абсолют а потім як фікс
+
+z-index: 5; преорітет вигляду, позиція по осі z (глибина)
+через позиціювання не створювати структуру сторінки
+@keyframes bg coor{
+0% { 
+затримка працює лише перед запуском,між повторами не працює 19:38 13.09.2021(безкінечна кількість повторів)
+
+  animation:  10s bgcolor -5s infinite reverse(зворотня) alternftive(маятник в обидві сторони) linear (статична швидкість) forwards(Залишає статичним по закінченню анімації);
+
+from с  to до
+
+кожна анімація має займатись тільки одним елементом
+через кому можна задати будь яку кількість анімацій
+
+  color: transparent; прозорий колір
+
+градіент  це перехід від одного кольору до іншого;
+background-image: linear-gradient(21deg ,black,orange,white);
+після кольору можна задати в % і рх скільки відступити від старту
+
+через клму можна задавати будь яку кількіть градієнтів
+repeating-linear-gradient()18:33 15.09.2021 не заповнюється до кінця градієнтами,а дублює  
+background-image: radial-gradient(grey,orange); основна фігура коло
+background-image: radial-gradient(circle at 20% 20% , grey,orange); початок з певної точки
+
+background-image: repeating-radial-gradient( lime 0%, lime 10%,black 15%, black 20%);
+conic-gradient( orange 0%,orange 15%, purple 15%, purple 20%);
+
+ФОРМИ
+<input> type="text"
+<input type="password"> ховає те що пишем
+<input type="radio"> для відмічення  cheked відразу відмічає
+<input type="checkbox" name="dog"> name групує радіо і чекбокс cheked відразу відмічає
+<input type="number"> тільки числа
+  <input type="color"> викликає палітру
+<input type="date"> calendar
+ <input value="123"> відразу буде написано 123
+  <input type="text" placeholder="enter name">  placeholder="enter name" підсказка enter name
+<input value="123" disabled> блокує введення
+ <input type="text"  maxlength="5"> макс кількість символів 5
+<select випадаючий список
+<select name="" id="">
+  <option>ua</option>
+  <option>ru</option>
+  <option>eng</option>
+</select>
+
+<datalist >
+<option>ua</option>
+  <option>ru</option>
+  <option>eng</option>
+</datalist>
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<button></button>
+<input type="submit">відправивти
+<input type="reset"> скинути
+
+outline: none виділння елементів на яких можна сфокусуватись)
+*{} виділити все на торінці
+input:focus зміна при фіксуванні
+input:active працює при натиснутій  мишці
+
+<input id='checkbox1' type="checkbox">
+<label for="checkbox1"> efefefef</label> пов'язує з чимось ( тілки з id)
+input[type="checkbox"] тільки для іпут z type чекбокс
+
+input[type="checkbox"]:checked ~ .mouse { ~ всі наступні .mouse + тільки наступний
+
+перемінні змінна ячейка пам'яті
+створення перемінних body { --mainColor: red;}
+background-color: var(--mainColor)
+
+
+  box-shadow:  x y blur color;
+  text-shadow: x y blur color;
+
+  min-width: none; встановлення меж при резиновій верстці
+max-width:200px
+min-height: ;
+max-height: ;
+height: 50vmax 50 %від макс вюпорта
+width: 50vmin 50% від мін
+vh вюпорт по висоті
+vw вюпорт по ширені
+
+<video src="">broken</video> текс тільки якщо немає відео
+controls показує елементи управління
+loop зациклити
+muted вимкнути звук
+poster"" заставка
+<source src=""> підключення фону
+
+змінює розміри контенту
+  object-fit: contain;
+object-fit: cover;
+  object-fit: fill;
+
+
+шрифти безпечні групи є на кожному пристрої
+font-family:sans-serif, arial ; ЗАДАЄ ШРИФТІ
+можна задавати через кому,візьме перший,який зможе застосувати
+preload попереднє завантаження
+
+<iframe src=></<iframe> вставляє у наш докменти вміст іншого документа у ізольованому просторі
+
+  display: flex; в межах однієї вложеності 
+є дві осі ,одна головна,друго другорядна
+flex-direction: ;задає головну вісь  flex-direction: row;  flex-direction: column;
+div:nth-child(3)
+justify-content: center; по головній осі(по центру)
+  align-items: center; другорядній center(по центру)
+flex встроєна "гума"
+flex-wrap: ;дозволяє перекидати з рядка в рядок при зміні розміру
+gap: 1vmin;задає простір між елементами20:21 22.09.2021
+  flex-shrink: ;коефіцент зменьшення від 0 до....
+
+order:2 задає елементу порядковий номер
+
+span::before{
+  content: "before ";
+}
+span::after{
+  content: "before";
+}
+без властивості контент,вони не з'являються на сторінці
+
+cmd командний рядок
+../ вийти з папки
+./ теперішнє місце
+cd перехід по вказаному шляху
+mkdir <name>створити папку
+cls очистити консоль
+null > <name> створити файл
+
+cd desktop вийти на робочій стіл
+
+git init ініціулює папку,як гіт проект
+git status вивиодить статус проекту
+git add зберігає проект в теперішиій момент та додає файл
+git commit скрін проендексованих файлів
+вийти з vin esc-:q!-enter
+git commit -m "зміни"
+git commit -a добавити всі файли в коміт
+ git commit --amend -m ""  створію новий омент,видаляючи старий
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+ git config настройки прокта
+git config --list вивід списку налаштувань
+git config.core де робити комент
+git config--global user.name для всіх конфіг
+git rm видаляє файл індексації 
+git rm --cached назва видалити з індексації
+git rm -f назва видалити  з індексації і видалити взагалі
+
+git add . добавити всі файли файли
+git add *.html
+[1,2].html
+*.[jpg,png]
+git restore file name відновлення попереднього коміта
+git restore --staged не добавляє в настпний коміт
+
+.gitignore спец файл для ігнорування (що гіт має інорувати)
+git remote робота з віддаленими файлами
+git remote add робота з віддаленими репозиторіями
+git remote add name
+git branch -M main перейменувати в мейн
+git push -u origin main викинути файли в гітхаб
+git push -u origin main зв'зати віддалену з десктоп
+git pull скаати і виконати зміни з гітхаба
+git clone
+
+git log виводить коміти
+git log -2 скільки отанніх комітів видати (2)
+git log -p змни у файлах
+git log --stat короткий вивід комітів
+git log --graph виводить коміти і малює гілки
+git branch видає гілки проекту(доступні)
+git branch назва гілки створити гілку(створюється нову гілку) від теперішнього коміту
+git branch -d видалення гілки
+git checkout name перехід на гілку
+git checkout -b name створити і перейти на неї
+git branch -m name name2 перейменувати гілку з наме на наме2
+git merge назву гілки ,для початку перейти в ту гілку в яку треба залити вказану
+git fetch скачати оновлення гілки
+git pull скачати і злити гілки
+
+
+transform зміна елементу
+transform: rotateY(180) Зміна по осі X Y
+backface-visibility: hidden 
+
+git push main Zymenko
+
+
+js-styse-layout-pain-composite лінія за якоб розпізнається сторінка,на що звертається браузер по черзі
+
+varial розрахунок геометрії сторінки
+конвеєр синхронізується з оновленням кадрів на моніторі
+contain ізолює від розрахунків поза контентом
+
+contain РОЗІБРАТИ!!!
+
+transform: translate по осі x y z здвиг
+translatex (50px)
+translatey (50px)
+translatez (50px)
+transform:rotatex(50deg, ) ротація градуси
+transform:skewx(50deg,)  спотворення искажение
+transform:scale (0.1, 0.5) маштабування ширина і висота в разах
+transform:style:preserve-3d 
+
+perspective: 800px дальність на яку ми дивимось батьку, старшому <div цьому><div></div></div>
+transform:style:preserve-3d щоб дочірній міг бути в 3д
+perspective-origin: top-left точка перспективив,звідки ми дивимось.
+перспектива знаходиться в центрі батка по замовчування
+не сумісний opacity
+
+user-select налаштовує виділення на сторінці
+user-select: none; заборонити все виіляти
+
+.down::selection{
+    color: orange;
+    background-color: black;
+  } замінює виділення в діві (виділення)
+
+git reset попередні коміти видаляються
+
+git reset назва файлу --soft м'який ресет,відновлення коміта,файли залишаються
+--hard файли видаляються
+
+git checkout назва коміту -b name створити нову гілку від заданного коміту
+git checkout на отсанній коміт гілки
+
+колір rgb: rgb(red, green, blue) значення від 0-255
+rgb: rgb(red, green, blue, прозоріть) по стандарту rgba: rgb(red, green, blue, (а)прозоріть) a - % або через дріб
+red green blue /прозоріть
+
+hex
+#11aa00 #11aa09a повний запис з альфа каналом
+#1a0 #1a09 скорочений 
+
+cmyk формат використовується для друку (завхваот кольорової гамми,там меньший)
+hsl  hue saturate light
+hue
+saturate насиеність
+light освітленість
+
+link rel="preload" href="./icon2.png" попереднє завантаження ресурсів
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./icon2.png">
+144x144 114x114 72x72
+
+
+@media (min-width:700px){
+  body {
+    background-color: orange;
+  }
+}
+@media задає значення роботи з контентом(від позміру екрану)
+орієнтація під особистий проект!
+and об'єднує умови
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> для мобілок, взаємозв'язок мобільного екрана з десктопом
+в хеді
+
+portrait
+Окно просмотра находится в портретной ориентации, то есть высота больше или равна ширине.
+landscape
+Окно просмотра находится в альбомной ориентации, то есть ширина больше высоты.
+
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+"бітрикс 24"
+
+scroll-behavior css елементу у якого є прокрутка
+.but{
+  scroll-behavior: unset;
+}
+
+html::-webkit-scrollbar{  width: 10px;    } скрол прокрутки
+
+html::-webkit-scrollbar-track{    background-color: blueviolet; } сама полоска
+html::-webkit-scrollbar-thumb{        background-color: orange;border-radius: 5px; } повзунок
+
+html::-webkit-scrollbar-thumb:hover{тільки для html
+
+.but{
+  mix-blend-mode: ;
+filter: blur(10px); для картинок filter: там різні фільтри
+ filter: drop-shadow(5px 5px 4px black) тінь по контенту
+backdrop-filter: blur(10px); на контент позаду елементу по осі z
+
+SVG-мова векторної графіки
+
+SVG "карманное руководство по написанию SVG"
+<svg></svg> створює полотно, треба закривати
+
+так <rect></rect> або так <rect/>; fill="#af0" заливка елементу
+
+<line x1="10" y1="10" x2="100" y2="100" fill="#af0"  
+  stroke="black" stroke-width="5"> </line> лінія,без замальовки не буде видно
+
+<polygon points="20,20 50,50 5,50" 
+fill="transparent" stroke="lime"></polygon> полігон,створити фігуру
+
+<ellipse cx="50" cy="70" rx="25" ry="50" fill="#af0"></ellipse> еліпс
+
+<circle cx="50" cy="70" r="25"></circle> коло
+
+ <polyline points="20,20 50,50 5,50"  ломана лінія
+  ></polyline>
+
+  <image x='10' y='10'
+   width: 10px;
+   height: 100%; href=""></image> підключити картинку
+<a href=""></a> силка
+
+<text x='10' y='10' rotate='20,5,6,30,40' textLength='200' > dota2</text> текст rotate='20,5,6,30,40' ротація , для кожної літери,кому не вистачило,беруть останню
+textLength='200' довжина всього тексту
+
+<tspan dy="-30" fill="#bbc42a" font-size="80">are</tspan> текст  dy відносно попереднього 
+
+  <defs>
+    <linearGradient id='grad1' x1='0%' y1='50%' x2='100%' y2='50%'>
+      <stop offset="0%" stop-color='pink'></stop>
+      <stop offset="100%" stop-color='red'></stop>
+    </linearGradient>
+  </defs>  написання градієнту
+
+<defs> об'являє фігуру
+
+
+
+  <defs>
+    <linearGradient id='grad1' x1='0%' y1='50%' x2='100%' y2='50%'>
+      <stop offset="0%" stop-color='orange'></stop>
+      <stop offset="50%" stop-color='yellow'></stop>
+      <stop offset="100%" stop-color='red'></stop>     
+    </linearGradient>
+  </defs>   
+fill='url(#grad1)' потрібно задавати ід і прописувати його у фігурі ,для якої задіяли градіент
+
+
+M m Move
+
+L l line
+
+V v vertical line
+
+H h horizontal line
+C c дуга 
+
+
+use 
+
+великі літри, глобальні від початку полотна
+маленькі,відносні від останньої точки
+
+z об'єдгати фігуру
+
+якщо не вказати команду,то візьме попередню
+
+d="M300,300 h50 v50 h-50 z"
+
+<path 
+  stroke ="red"
+  stroke-width='3'
+  fill="transparent"
+  d="M300,300 h50 v50 h-50 z"
+  />
+
+<svg viewbox='0 0 100 100'> можна маштабувати і рухати камеру по полотну свг 
+0 0 початок полотна
+100 100 це який розмір показати
+
+
+намалювати зображення 
+зменшувати полотно,поки воно не торкнеться зображення з протилежної сторони
+розміри полотна поставити,як  viewbox
+
+  <text>
+<textPath href="id">
+  eefefsefsefe
+</textPath>
+  </text> Текст по фігурі ,де id це id фігури по якій має йти
+stroke-dasharray: 30 на скільки сегментів розбити
+stroke-dashoffset: 200 здвиг від точки старту
+
+<animate> </animate> можна створювати анімацію в СВГ
+через href='' для кого 
+ begin='click' старт анімації
+dur='240ms' час
+repeatCount='2'кількість повторів
+atributeName='d' що міняємо
+values='початок; зміни в  ' через; можна ставити різну кількість
+кількість точок має бути завжди однакові,а то не буде працювати і
+begin='id.end' де id попередньої анімацї ще і +300ms
+
+
+<main></main> по правилам лише один раз на сторінці 
+<header></header>шапка
+<footer></footer>підвал
+всі теги блочні
+
+<section></section> секція часть контента певної теми
+<article></article> завернути частину сайте,яку можна транслювати без сайту
+<aside></aside> бокова панель
+
+<section>
+<h1></h1> До 6
+</section>
+
+<p></p> абзац з текстом
+
+
+<svg>
+    <animateMotion
+    href='#rect1'
+    dur='3s'
+    bergin='0s'
+    repeatCount="indefinite"
+    rotate="auto-reverse"
+        ><mpath href='#circle2'></mpath>
+  </animateMotion>
+  </svg>
+
+<pattern></pattern> дайти айдійшнік (створити фон в свг) фігури для іншо фігри
+
+<pattern id='pat1' height='30%' width="30%">
+<rect
+x='10'
+y='10'
+height="100"
+width="100"
+fill="red"
+></rect>
+<rect
+x='20'
+y='20'
+height="50"
+width="50"
+fill="orange"
+></rect>
+
+</pattern>
+
+<circle
+cx='410'
+cy='420'
+r='50'
+fill=url(#pat1)
+></circle>
+
+
+<circle
+cx='410'
+cy='420'
+r='100'
+fill=url(#pat1)
+></circle>
+<text
+x='50'
+y='400'
+font-size="70"
+fill="url(grad1)"
+stroke="black"
+>
+color go home
+</text> задати граіент тексту,лише в середині свг, можна навіть передати анімацію
+
+column-count: 4 ;на скільки колонок розбитит текст в елементі
+column-gap: 5px ; простір між колонками
+column-rule: 1px solid #ccc(color) ;
+
+<details>
+  <summary>спойлер
+    <p>іаіуапів</p>
+  </summary>
+</details> спойлер при натиску на спойлер відкривається Р
+
+text-overflow: ellipsis; хаває текст і ставить "..."
+
+overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; потрібно для роботи 
+
+grid сітка
+rol
+
+display: grid; inline-grid
+grid-template-rows:
+grid-template-columns:
+grid-template-areas:
+міра виміру коефіцент вільного простіру 1fr
+grid-gap 
+reapeat функція (1fr,3) 1 рф тричів
+
+
+.grid{
+  grid-template-areas: 
+  "header header header"
+  "header header header"
+  "main main main"
+  "footer  footer footer"  ;
+}
+
+.header {
+  grid-area: main;
+}
+
+
+https://learn.javascript.ru/
+
+https://learn.javascript.ru/getting-started

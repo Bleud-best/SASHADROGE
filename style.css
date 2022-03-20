@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  position: sticky
+  
+}
+
+html::-webkit-scrollbar{
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: blueviolet;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color:yellow;
+  border-radius: 5px;
+}
+
+.flex{
+  display: flex;
+  height: 1000px;
+  width: 1000px;
+      flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: yellowgreen;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 200px ;
+  height: 1000px;
+  width: 1000px;
+  background-color: yellowgreen;
+}
+
+.grid{
+  grid-template-areas: 
+  "header header "
+  "header header header"
+  "main main main"
+  "footer  footer footer"  ;
+}
+
+.header {
+  grid-area: main;
+}

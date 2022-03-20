@@ -1,0 +1,11 @@
+function task2(str, search) {
+  const searchStr = String(search);
+  for (let i = 0; i < searchStr.length; i += 1) {
+    const includes = str.includes(searchStr[i]);
+    if (includes) {
+      console.log("err!");
+      return;
+    } 
+  }
+  console.log("ok");
+}
